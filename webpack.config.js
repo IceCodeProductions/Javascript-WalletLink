@@ -14,7 +14,7 @@ module.exports = {
     },
   },
   output: {
-    filename: "walletlink-bundle.js",
+    filename: "wallet-sdk-bundle.js",
     path: path.resolve(__dirname, "build")
   },
   plugins: [
