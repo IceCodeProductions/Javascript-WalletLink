@@ -1,6 +1,6 @@
 {
   "name": "walletlink-bundler",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This project will create a bundled javascript version for web-browsers of the walletlink Node project",
   "private": true,
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "keywords": [],
   "author": "Rob Helmstetter",
-  "license": "MIT",
+  "license": "Apache License",
   "devDependencies": {
     "webpack": "^5.67.0",
     "webpack-cli": "^4.9.2"

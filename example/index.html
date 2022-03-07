@@ -12,27 +12,26 @@
 
 
         <script src="https://unpkg.com/web3@latest/dist/web3.min.js"></script>
-        <script src="https://dh3o9ipv3nlvy.cloudfront.net/js/walletlink/2.4.5/walletlink-bundle.js"></script>
-        <!-- <script src="walletlink-bundle.js"></script> -->
+        <script src="wallet-sdk-bundle.jss"></script> 
        
         <script>
           const APP_NAME = 'My Awesome DApp'
-const APP_LOGO_URL = 'https://example.com/logo.png'
-const ETH_JSONRPC_URL = 'https://mainnet.infura.io/v3/84842078b09946638c03157f83405213'
-const CHAIN_ID = 1
+          const APP_LOGO_URL = 'https://example.com/logo.png'
+          const ETH_JSONRPC_URL = 'https://mainnet.infura.io/v3/84842078b09946638c03157f83405213'
+          const CHAIN_ID = 1
 
-         const walletLink = new WalletLink({
-          appName: APP_NAME,
-          appLogoUrl: APP_LOGO_URL ,
-          darkMode: false
-        })
+          const coinbaseWallet = new CoinbaseWalletSDK({
+            appName: APP_NAME,
+            appLogoUrl: APP_LOGO_URL ,
+            darkMode: false
+          })
         
-        const ethereum = walletLink.makeWeb3Provider(
-          ETH_JSONRPC_URL , 1
-        )
+          const ethereum = coinbaseWallet.makeWeb3Provider(
+            ETH_JSONRPC_URL , 1
+          )
 
-        const web3 = new Web3(ethereum)
-        ethereum.enable()
+          const web3 = new Web3(ethereum)
+          ethereum.enable()
         
         </script>
     </body>
