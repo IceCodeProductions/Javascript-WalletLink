@@ -12,6 +12,14 @@
 
 # Build
  npm run build
+<<<<<<< Updated upstream
+=======
+
+# Deploy
+I then create a folder on my CDN /coinbase/{version}/ and then copy the files in the build directory wallet-sdk-bundle.js and the license file.  I set this to everyone read-only or whatever your cdn security requires.
+
+Or create a folder on your server js then add the coinbase/{version}/and then copy the files in the build directory wallet-sdk-bundle.js and the license file. Be sure these files/folder are read only
+>>>>>>> Stashed changes
 
 # Example
 The index.html in the example file shows how to access the library and how to start the coinbase Wallet SDK.  All other information about the usage is found https://github.com/coinbase/coinbase-wallet-sdk

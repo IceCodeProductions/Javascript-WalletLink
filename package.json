@@ -1,6 +1,6 @@
 {
   "name": "walletlink-bundler",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "This project will create a bundled javascript version for web-browsers of the walletlink Node project",
   "private": true,
   "scripts": {
@@ -15,7 +15,7 @@
     "webpack-cli": "^4.9.2"
   },
   "dependencies": {
-    "@coinbase/wallet-sdk": "^3.0.1",
+    "@coinbase/wallet-sdk": "^3.0.5",
     "assert": "^2.0.0",
     "buffer": "^6.0.3",
     "crypto-browserify": "^3.12.0",
