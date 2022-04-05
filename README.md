@@ -14,12 +14,12 @@
 
  This will then expose the coinbasewalletsdk for pure javascript projects use the <script src="wallet-sdk-bundle.js"></script>   More details can be found in the example/index.html file
 
-# Updating to new version of Coinbase wallet
+# Updating to latest version of Coinbase wallet
  I check out https://github.com/coinbase/coinbase-wallet-sdk/tags and look at the new tag number
 
- If there is a new version that when I last built this project, I then delete the files in the build directory
+ If there is a newer version that when you last built the project, then delete the files in the build directory
 
- In the package.json file, I change the @coinbase/wallet-sdk": "^3.0.5" version number to match the current tag
+ In the package.json file, change the @coinbase/wallet-sdk": "^3.0.5" <== version number to match the current tag
 
  Then open a terminal mode and run the following command
 
