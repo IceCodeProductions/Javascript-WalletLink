@@ -7,15 +7,30 @@
  NODE.js 
  Webpack
 
-# Uppdate
- I delete the files in the build directory first
+# Security Concerns
+ In the src/app.js file there is only one line of code that is needed:
+
+ import CoinbaseWalletSDK from '@coinbase/wallet-sdk'
+
+ This will then expose the coinbasewalletsdk for pure javascript projects use the <script src="wallet-sdk-bundle.js"></script>   More details can be found in the example/index.html file
+
+# Updating to new version of Coinbase wallet
+ I check out https://github.com/coinbase/coinbase-wallet-sdk/tags and look at the new tag number
+
+ If there is a new version that when I last built this project, I then delete the files in the build directory
+
+ In the package.json file, I change the @coinbase/wallet-sdk": "^3.0.5" version number to match the current tag
+
+ Then open a terminal mode and run the following command
 
  npm upgrade
 
 # Build
+ To actually build the file to use in pure javascript, then you must build the project with the following command
 
  npm run build
 
+ after this command runs, there should be a file in the build/wallet-sdk-bundle.js and the license file
 
 # Deploy
 I then create a folder on my CDN /coinbase/{version}/ and then copy the files in the build directory wallet-sdk-bundle.js and the license file.  I set this to everyone read-only or whatever your cdn security requires.
