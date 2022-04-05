@@ -9,12 +9,10 @@
 
 # Uppdate
  I delete the files in the build directory first
- terminal mode
 
  npm upgrade
 
 # Build
-terminal mode
 
  npm run build
 
